@@ -28,6 +28,7 @@
 		FAD135082A80298200767FA6 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135042A80298200767FA6 /* AppErrors.swift */; };
 		FAD135092A80298200767FA6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135052A80298200767FA6 /* NetworkService.swift */; };
 		FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135062A80298200767FA6 /* URLRequestBuilder.swift */; };
+		FAD1350C2A802A2000767FA6 /* FilkerImagesEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1350B2A802A2000767FA6 /* FilkerImagesEndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		FAD135042A80298200767FA6 /* AppErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		FAD135052A80298200767FA6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FAD135062A80298200767FA6 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		FAD1350B2A802A2000767FA6 /* FilkerImagesEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilkerImagesEndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		FAD134DD2A80168D00767FA6 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1350B2A802A2000767FA6 /* FilkerImagesEndPoints.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */,
 				FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */,
 				FAD135082A80298200767FA6 /* AppErrors.swift in Sources */,
+				FAD1350C2A802A2000767FA6 /* FilkerImagesEndPoints.swift in Sources */,
 				FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */,
 				FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */,
 				FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */,
