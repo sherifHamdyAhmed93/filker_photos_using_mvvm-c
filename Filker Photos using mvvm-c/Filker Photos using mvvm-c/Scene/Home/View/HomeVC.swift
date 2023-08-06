@@ -48,8 +48,6 @@ class HomeVC: UIViewController {
         configureActivityIndictor()
         bindData()
         input.send(.viewDidAppear)
-
-        // Do any additional setup after loading the view.
     }
     
     private func bindData(){
@@ -61,7 +59,6 @@ class HomeVC: UIViewController {
                     self?.showDefaultAlert(title: "Error", message: error.localizedDescription)
                 case .didGetData:
                     self?.applySnapshot(animatingDifferences: false)
-                    //self?.collectionView.checkData(emptyError: nil)
                 case .isLoading(let loading):
                     if loading{
                         self?.activityIndicator.startAnimating()

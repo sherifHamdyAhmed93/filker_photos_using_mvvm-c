@@ -40,7 +40,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
     }
     
     deinit{
-        print("deinit image viewer")
+        debugPrint("deinit image viewer")
     }
     
     func configureScrollView() {

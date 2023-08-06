@@ -27,8 +27,8 @@ extension HomeVC{
             guard kind == UICollectionView.elementKindSectionHeader else {
                 return nil
             }
-            let section = self.dataSource.snapshot()
-                .sectionIdentifiers[indexPath.section]
+//            let section = self.dataSource.snapshot()
+//                .sectionIdentifiers[indexPath.section]
             let view = collectionView.dequeueReusableSupplementaryView(
                 ofKind: kind,
                 withReuseIdentifier: BannerCollectionReusableView.reuseIdentifier,
@@ -60,7 +60,7 @@ extension HomeVC{
         
         
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical //.horizontal
+        layout.scrollDirection = .vertical
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         layout.itemSize = CGSize(width: itemWidth, height: itemWidth)
