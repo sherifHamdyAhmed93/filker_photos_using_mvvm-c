@@ -12,6 +12,10 @@
 		FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF8522A8013AA00C06853 /* SceneDelegate.swift */; };
 		FA5BF85A2A8013AD00C06853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5BF8592A8013AD00C06853 /* Assets.xcassets */; };
 		FA5BF85D2A8013AD00C06853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5BF85B2A8013AD00C06853 /* LaunchScreen.storyboard */; };
+		FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134EA2A80206200767FA6 /* FilkerResponse.swift */; };
+		FAD134EF2A80206200767FA6 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134EB2A80206200767FA6 /* Photos.swift */; };
+		FAD134F02A80206200767FA6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134EC2A80206200767FA6 /* Photo.swift */; };
+		FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134ED2A80206200767FA6 /* FilkerRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FA5BF8592A8013AD00C06853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5BF85C2A8013AD00C06853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5BF85E2A8013AD00C06853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD134EA2A80206200767FA6 /* FilkerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilkerResponse.swift; sourceTree = "<group>"; };
+		FAD134EB2A80206200767FA6 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		FAD134EC2A80206200767FA6 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		FAD134ED2A80206200767FA6 /* FilkerRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilkerRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +78,119 @@
 			children = (
 				FA5BF8502A8013AA00C06853 /* AppDelegate.swift */,
 				FA5BF8522A8013AA00C06853 /* SceneDelegate.swift */,
-				FA5BF8592A8013AD00C06853 /* Assets.xcassets */,
-				FA5BF85B2A8013AD00C06853 /* LaunchScreen.storyboard */,
+				FAD134E32A80170100767FA6 /* Utils */,
+				FAD134E72A801F3E00767FA6 /* Caching Manager */,
+				FAD134E22A8016EC00767FA6 /* Coordinator */,
+				FAD134E12A8016DB00767FA6 /* Models */,
+				FAD134E02A8016C500767FA6 /* Extensions */,
+				FAD134DC2A80167900767FA6 /* Network */,
+				FAD134DD2A80168D00767FA6 /* Endpoints */,
+				FAD134DE2A80169500767FA6 /* Scene */,
+				FAD134DF2A8016AF00767FA6 /* Resources */,
 				FA5BF85E2A8013AD00C06853 /* Info.plist */,
 			);
 			path = "Filker Photos using mvvm-c";
+			sourceTree = "<group>";
+		};
+		FAD134DC2A80167900767FA6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAD134DD2A80168D00767FA6 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		FAD134DE2A80169500767FA6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FAD134E82A801FBC00767FA6 /* Home */,
+				FAD134E92A801FCC00767FA6 /* Details */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FAD134DF2A8016AF00767FA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA5BF8592A8013AD00C06853 /* Assets.xcassets */,
+				FA5BF85B2A8013AD00C06853 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAD134E02A8016C500767FA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAD134E12A8016DB00767FA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD134ED2A80206200767FA6 /* FilkerRequestModel.swift */,
+				FAD134EA2A80206200767FA6 /* FilkerResponse.swift */,
+				FAD134EC2A80206200767FA6 /* Photo.swift */,
+				FAD134EB2A80206200767FA6 /* Photos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAD134E22A8016EC00767FA6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FAD134E32A80170100767FA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAD134E42A80171500767FA6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		FAD134E52A80171E00767FA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD134E72A801F3E00767FA6 /* Caching Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Caching Manager";
+			sourceTree = "<group>";
+		};
+		FAD134E82A801FBC00767FA6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAD134E52A80171E00767FA6 /* View */,
+				FAD134E42A80171500767FA6 /* View Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAD134E92A801FCC00767FA6 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		FE10986709DB1F30A20AC485 /* Frameworks */ = {
@@ -199,8 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD134EF2A80206200767FA6 /* Photos.swift in Sources */,
+				FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */,
+				FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */,
 				FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */,
 				FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */,
+				FAD134F02A80206200767FA6 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
