@@ -30,7 +30,7 @@ class HomeVC: UIViewController {
     private var cancenables = Set<AnyCancellable>()
     
     //MARK:- ViewModel
-    private var viewModel:ImagesViewModel
+    internal var viewModel:ImagesViewModel
 
     init(viewModel: ImagesViewModel) {
         self.viewModel = viewModel
