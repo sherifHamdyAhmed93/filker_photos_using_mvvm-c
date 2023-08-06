@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  Filker Photos using mvvm-c
+//
+//  Created by Sherif Hamdy on 06/08/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+API_KEY = d17378e37e555ebef55ab86c4180e8dc

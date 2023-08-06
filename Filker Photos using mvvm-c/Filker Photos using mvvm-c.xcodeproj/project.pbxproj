@@ -23,6 +23,7 @@
 		FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FA2A8024AF00767FA6 /* CacheManager.swift */; };
 		FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FC2A8024DF00767FA6 /* DiskManager.swift */; };
 		FAD134FF2A80267B00767FA6 /* UIImageView + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */; };
+		FAD135012A80278000767FA6 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135002A80278000767FA6 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		FAD134FA2A8024AF00767FA6 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		FAD134FC2A8024DF00767FA6 /* DiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskManager.swift; sourceTree = "<group>"; };
 		FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + extensions.swift"; sourceTree = "<group>"; };
+		FAD135002A80278000767FA6 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		FAD135022A80279600767FA6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 				FAD134DE2A80169500767FA6 /* Scene */,
 				FAD134DF2A8016AF00767FA6 /* Resources */,
 				FA5BF85E2A8013AD00C06853 /* Info.plist */,
+				FAD135022A80279600767FA6 /* Config.xcconfig */,
 			);
 			path = "Filker Photos using mvvm-c";
 			sourceTree = "<group>";
@@ -171,6 +175,7 @@
 		FAD134E32A80170100767FA6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FAD135002A80278000767FA6 /* AppConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */,
 				FAD134F02A80206200767FA6 /* Photo.swift in Sources */,
 				FAD134F82A80240400767FA6 /* CollectionView+Extensions.swift in Sources */,
+				FAD135012A80278000767FA6 /* AppConstants.swift in Sources */,
 				FAD134F92A80240400767FA6 /* TableView + Collectionview.swift in Sources */,
 				FAD134F62A80240400767FA6 /* Encodable + Extensions.swift in Sources */,
 			);
@@ -368,6 +374,7 @@
 /* Begin XCBuildConfiguration section */
 		FA5BF85F2A8013AD00C06853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD135022A80279600767FA6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -428,6 +435,7 @@
 		};
 		FA5BF8602A8013AD00C06853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD135022A80279600767FA6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
