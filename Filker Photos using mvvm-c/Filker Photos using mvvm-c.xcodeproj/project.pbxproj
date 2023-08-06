@@ -43,6 +43,7 @@
 		FAD135282A802E5200767FA6 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135252A802E5200767FA6 /* HomeCoordinator.swift */; };
 		FAD135292A802E5200767FA6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135262A802E5200767FA6 /* AppCoordinator.swift */; };
 		FAD1352A2A802E5200767FA6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135272A802E5200767FA6 /* Coordinator.swift */; };
+		FAD1352C2A80304300767FA6 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1352B2A80304300767FA6 /* ImagesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		FAD135252A802E5200767FA6 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		FAD135262A802E5200767FA6 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FAD135272A802E5200767FA6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FAD1352B2A80304300767FA6 /* ImagesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 		FAD134E42A80171500767FA6 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1352B2A80304300767FA6 /* ImagesViewModel.swift */,
 				FAD1351F2A802D1200767FA6 /* PhotoViewModel.swift */,
 			);
 			path = "View Model";
@@ -436,6 +439,7 @@
 				FAD1350C2A802A2000767FA6 /* FilkerImagesEndPoints.swift in Sources */,
 				FAD135162A802BDC00767FA6 /* ImageCollectionViewCell.swift in Sources */,
 				FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */,
+				FAD1352C2A80304300767FA6 /* ImagesViewModel.swift in Sources */,
 				FAD1352A2A802E5200767FA6 /* Coordinator.swift in Sources */,
 				FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */,
 				FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */,
