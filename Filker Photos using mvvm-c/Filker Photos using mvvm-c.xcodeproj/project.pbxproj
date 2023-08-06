@@ -24,6 +24,10 @@
 		FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FC2A8024DF00767FA6 /* DiskManager.swift */; };
 		FAD134FF2A80267B00767FA6 /* UIImageView + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */; };
 		FAD135012A80278000767FA6 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135002A80278000767FA6 /* AppConstants.swift */; };
+		FAD135072A80298200767FA6 /* JsonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135032A80298200767FA6 /* JsonHandler.swift */; };
+		FAD135082A80298200767FA6 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135042A80298200767FA6 /* AppErrors.swift */; };
+		FAD135092A80298200767FA6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135052A80298200767FA6 /* NetworkService.swift */; };
+		FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135062A80298200767FA6 /* URLRequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + extensions.swift"; sourceTree = "<group>"; };
 		FAD135002A80278000767FA6 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		FAD135022A80279600767FA6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		FAD135032A80298200767FA6 /* JsonHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHandler.swift; sourceTree = "<group>"; };
+		FAD135042A80298200767FA6 /* AppErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		FAD135052A80298200767FA6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FAD135062A80298200767FA6 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,10 @@
 		FAD134DC2A80167900767FA6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FAD135042A80298200767FA6 /* AppErrors.swift */,
+				FAD135032A80298200767FA6 /* JsonHandler.swift */,
+				FAD135052A80298200767FA6 /* NetworkService.swift */,
+				FAD135062A80298200767FA6 /* URLRequestBuilder.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -342,13 +354,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD134FF2A80267B00767FA6 /* UIImageView + extensions.swift in Sources */,
+				FAD135072A80298200767FA6 /* JsonHandler.swift in Sources */,
 				FAD134EF2A80206200767FA6 /* Photos.swift in Sources */,
 				FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */,
 				FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */,
+				FAD135092A80298200767FA6 /* NetworkService.swift in Sources */,
 				FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */,
 				FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */,
 				FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */,
+				FAD135082A80298200767FA6 /* AppErrors.swift in Sources */,
 				FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */,
+				FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */,
 				FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */,
 				FAD134F02A80206200767FA6 /* Photo.swift in Sources */,
 				FAD134F82A80240400767FA6 /* CollectionView+Extensions.swift in Sources */,
