@@ -20,6 +20,9 @@
 		FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F32A80240400767FA6 /* ViewController + Alert.swift */; };
 		FAD134F82A80240400767FA6 /* CollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F42A80240400767FA6 /* CollectionView+Extensions.swift */; };
 		FAD134F92A80240400767FA6 /* TableView + Collectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F52A80240400767FA6 /* TableView + Collectionview.swift */; };
+		FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FA2A8024AF00767FA6 /* CacheManager.swift */; };
+		FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FC2A8024DF00767FA6 /* DiskManager.swift */; };
+		FAD134FF2A80267B00767FA6 /* UIImageView + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		FAD134F32A80240400767FA6 /* ViewController + Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + Alert.swift"; sourceTree = "<group>"; };
 		FAD134F42A80240400767FA6 /* CollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		FAD134F52A80240400767FA6 /* TableView + Collectionview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView + Collectionview.swift"; sourceTree = "<group>"; };
+		FAD134FA2A8024AF00767FA6 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		FAD134FC2A8024DF00767FA6 /* DiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskManager.swift; sourceTree = "<group>"; };
+		FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 				FAD134F22A80240300767FA6 /* Encodable + Extensions.swift */,
 				FAD134F52A80240400767FA6 /* TableView + Collectionview.swift */,
 				FAD134F32A80240400767FA6 /* ViewController + Alert.swift */,
+				FAD134FE2A80267B00767FA6 /* UIImageView + extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +192,8 @@
 		FAD134E72A801F3E00767FA6 /* Caching Manager */ = {
 			isa = PBXGroup;
 			children = (
+				FAD134FA2A8024AF00767FA6 /* CacheManager.swift */,
+				FAD134FC2A8024DF00767FA6 /* DiskManager.swift */,
 			);
 			path = "Caching Manager";
 			sourceTree = "<group>";
@@ -327,12 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD134FF2A80267B00767FA6 /* UIImageView + extensions.swift in Sources */,
 				FAD134EF2A80206200767FA6 /* Photos.swift in Sources */,
 				FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */,
 				FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */,
 				FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */,
 				FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */,
 				FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */,
+				FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */,
+				FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */,
 				FAD134F02A80206200767FA6 /* Photo.swift in Sources */,
 				FAD134F82A80240400767FA6 /* CollectionView+Extensions.swift in Sources */,
 				FAD134F92A80240400767FA6 /* TableView + Collectionview.swift in Sources */,
