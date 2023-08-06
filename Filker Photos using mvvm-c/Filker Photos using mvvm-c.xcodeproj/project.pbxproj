@@ -29,6 +29,15 @@
 		FAD135092A80298200767FA6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135052A80298200767FA6 /* NetworkService.swift */; };
 		FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135062A80298200767FA6 /* URLRequestBuilder.swift */; };
 		FAD1350C2A802A2000767FA6 /* FilkerImagesEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1350B2A802A2000767FA6 /* FilkerImagesEndPoints.swift */; };
+		FAD1350F2A802AA900767FA6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1350D2A802AA900767FA6 /* HomeVC.swift */; };
+		FAD135102A802AA900767FA6 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD1350E2A802AA900767FA6 /* HomeVC.xib */; };
+		FAD135122A802B3C00767FA6 /* HomeVC + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135112A802B3C00767FA6 /* HomeVC + CollectionView.swift */; };
+		FAD135162A802BDC00767FA6 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135142A802BDB00767FA6 /* ImageCollectionViewCell.swift */; };
+		FAD135172A802BDC00767FA6 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD135152A802BDB00767FA6 /* ImageCollectionViewCell.xib */; };
+		FAD1351B2A802C1300767FA6 /* BannerCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135192A802C1300767FA6 /* BannerCollectionReusableView.swift */; };
+		FAD1351C2A802C1300767FA6 /* BannerCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD1351A2A802C1300767FA6 /* BannerCollectionReusableView.xib */; };
+		FAD1351E2A802C5700767FA6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1351D2A802C5700767FA6 /* Banner.swift */; };
+		FAD135202A802D1200767FA6 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1351F2A802D1200767FA6 /* PhotoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +68,15 @@
 		FAD135052A80298200767FA6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FAD135062A80298200767FA6 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		FAD1350B2A802A2000767FA6 /* FilkerImagesEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilkerImagesEndPoints.swift; sourceTree = "<group>"; };
+		FAD1350D2A802AA900767FA6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FAD1350E2A802AA900767FA6 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		FAD135112A802B3C00767FA6 /* HomeVC + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC + CollectionView.swift"; sourceTree = "<group>"; };
+		FAD135142A802BDB00767FA6 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAD135152A802BDB00767FA6 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAD135192A802C1300767FA6 /* BannerCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionReusableView.swift; sourceTree = "<group>"; };
+		FAD1351A2A802C1300767FA6 /* BannerCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCollectionReusableView.xib; sourceTree = "<group>"; };
+		FAD1351D2A802C5700767FA6 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		FAD1351F2A802D1200767FA6 /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +190,7 @@
 		FAD134E12A8016DB00767FA6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1351D2A802C5700767FA6 /* Banner.swift */,
 				FAD134ED2A80206200767FA6 /* FilkerRequestModel.swift */,
 				FAD134EA2A80206200767FA6 /* FilkerResponse.swift */,
 				FAD134EC2A80206200767FA6 /* Photo.swift */,
@@ -198,6 +217,7 @@
 		FAD134E42A80171500767FA6 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1351F2A802D1200767FA6 /* PhotoViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -205,6 +225,11 @@
 		FAD134E52A80171E00767FA6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1350D2A802AA900767FA6 /* HomeVC.swift */,
+				FAD135112A802B3C00767FA6 /* HomeVC + CollectionView.swift */,
+				FAD1350E2A802AA900767FA6 /* HomeVC.xib */,
+				FAD135132A802BB000767FA6 /* Image Cell */,
+				FAD135182A802BE200767FA6 /* Banner Section */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +257,24 @@
 			children = (
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		FAD135132A802BB000767FA6 /* Image Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAD135142A802BDB00767FA6 /* ImageCollectionViewCell.swift */,
+				FAD135152A802BDB00767FA6 /* ImageCollectionViewCell.xib */,
+			);
+			path = "Image Cell";
+			sourceTree = "<group>";
+		};
+		FAD135182A802BE200767FA6 /* Banner Section */ = {
+			isa = PBXGroup;
+			children = (
+				FAD135192A802C1300767FA6 /* BannerCollectionReusableView.swift */,
+				FAD1351A2A802C1300767FA6 /* BannerCollectionReusableView.xib */,
+			);
+			path = "Banner Section";
 			sourceTree = "<group>";
 		};
 		FE10986709DB1F30A20AC485 /* Frameworks */ = {
@@ -303,6 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5BF85D2A8013AD00C06853 /* LaunchScreen.storyboard in Resources */,
+				FAD135102A802AA900767FA6 /* HomeVC.xib in Resources */,
+				FAD1351C2A802C1300767FA6 /* BannerCollectionReusableView.xib in Resources */,
+				FAD135172A802BDC00767FA6 /* ImageCollectionViewCell.xib in Resources */,
 				FA5BF85A2A8013AD00C06853 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,16 +403,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD134FF2A80267B00767FA6 /* UIImageView + extensions.swift in Sources */,
+				FAD1350F2A802AA900767FA6 /* HomeVC.swift in Sources */,
 				FAD135072A80298200767FA6 /* JsonHandler.swift in Sources */,
 				FAD134EF2A80206200767FA6 /* Photos.swift in Sources */,
+				FAD135202A802D1200767FA6 /* PhotoViewModel.swift in Sources */,
 				FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */,
+				FAD1351E2A802C5700767FA6 /* Banner.swift in Sources */,
 				FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */,
 				FAD135092A80298200767FA6 /* NetworkService.swift in Sources */,
 				FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */,
+				FAD1351B2A802C1300767FA6 /* BannerCollectionReusableView.swift in Sources */,
 				FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */,
 				FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */,
 				FAD135082A80298200767FA6 /* AppErrors.swift in Sources */,
 				FAD1350C2A802A2000767FA6 /* FilkerImagesEndPoints.swift in Sources */,
+				FAD135162A802BDC00767FA6 /* ImageCollectionViewCell.swift in Sources */,
 				FAD134FD2A8024DF00767FA6 /* DiskManager.swift in Sources */,
 				FAD1350A2A80298200767FA6 /* URLRequestBuilder.swift in Sources */,
 				FAD134FB2A8024AF00767FA6 /* CacheManager.swift in Sources */,
@@ -375,6 +426,7 @@
 				FAD135012A80278000767FA6 /* AppConstants.swift in Sources */,
 				FAD134F92A80240400767FA6 /* TableView + Collectionview.swift in Sources */,
 				FAD134F62A80240400767FA6 /* Encodable + Extensions.swift in Sources */,
+				FAD135122A802B3C00767FA6 /* HomeVC + CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
