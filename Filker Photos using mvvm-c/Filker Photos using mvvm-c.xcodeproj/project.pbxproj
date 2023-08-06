@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B8EDD92E5E665CB00D52AE /* Pods_Filker_Photos_using_mvvm_c.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F187CD8B8EDD6D19FD4041 /* Pods_Filker_Photos_using_mvvm_c.framework */; };
 		FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF8502A8013AA00C06853 /* AppDelegate.swift */; };
 		FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF8522A8013AA00C06853 /* SceneDelegate.swift */; };
 		FA5BF8552A8013AA00C06853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF8542A8013AA00C06853 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CFB4E47C874B7FE1BD06668 /* Pods-Filker Photos using mvvm-c.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filker Photos using mvvm-c.debug.xcconfig"; path = "Target Support Files/Pods-Filker Photos using mvvm-c/Pods-Filker Photos using mvvm-c.debug.xcconfig"; sourceTree = "<group>"; };
+		3EFDBB9C1D5A561541625838 /* Pods-Filker Photos using mvvm-c.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filker Photos using mvvm-c.release.xcconfig"; path = "Target Support Files/Pods-Filker Photos using mvvm-c/Pods-Filker Photos using mvvm-c.release.xcconfig"; sourceTree = "<group>"; };
+		43F187CD8B8EDD6D19FD4041 /* Pods_Filker_Photos_using_mvvm_c.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Filker_Photos_using_mvvm_c.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5BF84D2A8013AA00C06853 /* Filker Photos using mvvm-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filker Photos using mvvm-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5BF8502A8013AA00C06853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5BF8522A8013AA00C06853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B8EDD92E5E665CB00D52AE /* Pods_Filker_Photos_using_mvvm_c.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48222AC10C6B824329991BEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CFB4E47C874B7FE1BD06668 /* Pods-Filker Photos using mvvm-c.debug.xcconfig */,
+				3EFDBB9C1D5A561541625838 /* Pods-Filker Photos using mvvm-c.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA5BF8442A8013AA00C06853 = {
 			isa = PBXGroup;
 			children = (
 				FA5BF84F2A8013AA00C06853 /* Filker Photos using mvvm-c */,
 				FA5BF84E2A8013AA00C06853 /* Products */,
+				48222AC10C6B824329991BEB /* Pods */,
+				FE10986709DB1F30A20AC485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Filker Photos using mvvm-c";
 			sourceTree = "<group>";
 		};
+		FE10986709DB1F30A20AC485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43F187CD8B8EDD6D19FD4041 /* Pods_Filker_Photos_using_mvvm_c.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA5BF8612A8013AD00C06853 /* Build configuration list for PBXNativeTarget "Filker Photos using mvvm-c" */;
 			buildPhases = (
+				EAF3A81ACDCDCBA360AEBF2F /* [CP] Check Pods Manifest.lock */,
 				FA5BF8492A8013AA00C06853 /* Sources */,
 				FA5BF84A2A8013AA00C06853 /* Frameworks */,
 				FA5BF84B2A8013AA00C06853 /* Resources */,
+				CD8F38D5DD0FFD44A0269458 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = FA5BF8482A8013AA00C06853 /* Build configuration list for PBXProject "Filker Photos using mvvm-c" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD8F38D5DD0FFD44A0269458 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Filker Photos using mvvm-c/Pods-Filker Photos using mvvm-c-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Filker Photos using mvvm-c/Pods-Filker Photos using mvvm-c-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Filker Photos using mvvm-c/Pods-Filker Photos using mvvm-c-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF3A81ACDCDCBA360AEBF2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Filker Photos using mvvm-c-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA5BF8492A8013AA00C06853 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		FA5BF8622A8013AD00C06853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFB4E47C874B7FE1BD06668 /* Pods-Filker Photos using mvvm-c.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		FA5BF8632A8013AD00C06853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFDBB9C1D5A561541625838 /* Pods-Filker Photos using mvvm-c.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
