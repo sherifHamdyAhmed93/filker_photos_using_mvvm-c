@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Filker_Photos_using_mvvm_c" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="iDf-7l-kGB" id="vLd-og-zro"/>
                 <outlet property="collectionView" destination="M2m-id-84x" id="FwE-zu-fbU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,6 +30,9 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iDf-7l-kGB">
+                    <rect key="frame" x="186.66666666666666" y="428.66666666666669" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,7 +40,9 @@
                 <constraint firstItem="M2m-id-84x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4ro-ir-iQD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M2m-id-84x" secondAttribute="trailing" id="CvV-xM-1lB"/>
                 <constraint firstItem="M2m-id-84x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KMP-E7-BIf"/>
+                <constraint firstItem="iDf-7l-kGB" firstAttribute="centerX" secondItem="M2m-id-84x" secondAttribute="centerX" id="QFN-QA-w7z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="M2m-id-84x" secondAttribute="bottom" id="ccC-RS-z7G"/>
+                <constraint firstItem="iDf-7l-kGB" firstAttribute="centerY" secondItem="M2m-id-84x" secondAttribute="centerY" id="jto-gs-Nce"/>
             </constraints>
             <point key="canvasLocation" x="127" y="20"/>
         </view>
