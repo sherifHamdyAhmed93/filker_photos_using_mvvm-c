@@ -24,6 +24,14 @@ class ImageCollectionViewCell: UICollectionViewCell {
         cellImageView.image = nil
     }
     
-    
+    func setupCell(photo:PhotoViewModel){
+        if let urlString = photo.imageURL , let url = URL(string: urlString){
+            cellImageView.loadImage(fromURL: url, forKey: urlString) { [weak self] image in
+                DispatchQueue.main.async {
+                    self?.cellImageView.image = image
+                }
+            }
+        }
+    }
 
 }

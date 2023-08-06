@@ -17,6 +17,8 @@ extension HomeVC{
                 UICollectionViewCell? in
                 guard let self = self else{return nil}
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.reuseIdentifier, for: indexPath) as! ImageCollectionViewCell
+                let photo = self.viewModel.banners[indexPath.section].photosData[indexPath.item]
+                cell.setupCell(photo: photo)
                 return cell
             })
         
@@ -37,9 +39,6 @@ extension HomeVC{
         
         return dataSource
     }
-    
-    
-    
     
 }
 
@@ -76,19 +75,26 @@ extension HomeVC{
     }
     
     @objc private func refresh(){
+        input.send(.refreshData)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+            self.collectionView.refreshControl?.endRefreshing()
+        }
+
     }
 }
 
 extension HomeVC:UICollectionViewDelegate{
-    
-   
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        //presenter.didTabOnItem(index: indexPath.item)
+        input.send(.viewImage(indexPath: indexPath))
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.section == viewModel.banners.count - 1 && viewModel.isLoading == false{
+            input.send(.loadMore)
+        }
+    }
 }
 
 extension HomeVC:UICollectionViewDelegateFlowLayout{
