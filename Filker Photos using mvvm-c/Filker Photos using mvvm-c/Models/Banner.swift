@@ -9,6 +9,8 @@ import Foundation
 
 struct Banner{
     let id:String = UUID().uuidString
+    var photosData:[PhotoViewModel] = []
+
 }
 
 extension Banner:Hashable{

@@ -26,7 +26,14 @@ class HomeVC: UIViewController {
     
     internal lazy var dataSource = makeDataSource()
     
-    init(){
+    let input = PassthroughSubject<ImagesViewModel.Input,Never>()
+    private var cancenables = Set<AnyCancellable>()
+    
+    //MARK:- ViewModel
+    private var viewModel:ImagesViewModel
+
+    init(viewModel: ImagesViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -39,7 +46,30 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         configureActivityIndictor()
+        bindData()
+        input.send(.viewDidAppear)
+
         // Do any additional setup after loading the view.
+    }
+    
+    private func bindData(){
+        viewModel.transform(input: input.eraseToAnyPublisher())
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] output in
+                switch output{
+                case .didFailWithError(let error):
+                    self?.showDefaultAlert(title: "Error", message: error.localizedDescription)
+                case .didGetData:
+                    self?.applySnapshot(animatingDifferences: false)
+                    //self?.collectionView.checkData(emptyError: nil)
+                case .isLoading(let loading):
+                    if loading{
+                        self?.activityIndicator.startAnimating()
+                    }else{
+                        self?.activityIndicator.stopAnimating()
+                    }
+                }
+            }.store(in: &cancenables)
     }
     
     private func configureActivityIndictor(){
@@ -48,4 +78,15 @@ class HomeVC: UIViewController {
         activityIndicator.style = .large
     }
 
+}
+
+extension HomeVC{
+    private func applySnapshot(animatingDifferences: Bool = true) {
+        var snapshot = Snapshot()
+        snapshot.appendSections(viewModel.banners)
+        viewModel.banners.forEach { section in
+            snapshot.appendItems(section.photosData, toSection: section)
+        }
+        dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
+    }
 }

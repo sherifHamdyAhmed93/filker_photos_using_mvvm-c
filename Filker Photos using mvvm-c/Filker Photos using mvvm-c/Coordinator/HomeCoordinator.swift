@@ -23,11 +23,16 @@ class HomeCoordinator:Coordinator{
     }
     
     lazy var homeVC:HomeVC? = {
-        let vc = HomeVC()
+        let vm = ImagesViewModel()
+        vm.delegate = self
+        let vc = HomeVC(viewModel: vm)
        return vc
     }()
-    
-    
-    
 }
 
+extension HomeCoordinator:ImagesViewModelDelegate{
+    func didSelectImage(image: PhotoViewModel) {
+        let vc = ImageViewController(photoViewModel: image)
+        self.navigationController.pushViewController(vc, animated: true)
+    }
+}
