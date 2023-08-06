@@ -38,6 +38,8 @@
 		FAD1351C2A802C1300767FA6 /* BannerCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD1351A2A802C1300767FA6 /* BannerCollectionReusableView.xib */; };
 		FAD1351E2A802C5700767FA6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1351D2A802C5700767FA6 /* Banner.swift */; };
 		FAD135202A802D1200767FA6 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1351F2A802D1200767FA6 /* PhotoViewModel.swift */; };
+		FAD135232A802E1800767FA6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD135212A802E1800767FA6 /* ImageViewController.swift */; };
+		FAD135242A802E1800767FA6 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD135222A802E1800767FA6 /* ImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		FAD1351A2A802C1300767FA6 /* BannerCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCollectionReusableView.xib; sourceTree = "<group>"; };
 		FAD1351D2A802C5700767FA6 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		FAD1351F2A802D1200767FA6 /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		FAD135212A802E1800767FA6 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		FAD135222A802E1800767FA6 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,8 @@
 		FAD134E92A801FCC00767FA6 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				FAD135212A802E1800767FA6 /* ImageViewController.swift */,
+				FAD135222A802E1800767FA6 /* ImageViewController.xib */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				FAD135102A802AA900767FA6 /* HomeVC.xib in Resources */,
 				FAD1351C2A802C1300767FA6 /* BannerCollectionReusableView.xib in Resources */,
 				FAD135172A802BDC00767FA6 /* ImageCollectionViewCell.xib in Resources */,
+				FAD135242A802E1800767FA6 /* ImageViewController.xib in Resources */,
 				FA5BF85A2A8013AD00C06853 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +415,7 @@
 				FAD134EF2A80206200767FA6 /* Photos.swift in Sources */,
 				FAD135202A802D1200767FA6 /* PhotoViewModel.swift in Sources */,
 				FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */,
+				FAD135232A802E1800767FA6 /* ImageViewController.swift in Sources */,
 				FAD1351E2A802C5700767FA6 /* Banner.swift in Sources */,
 				FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */,
 				FAD135092A80298200767FA6 /* NetworkService.swift in Sources */,
