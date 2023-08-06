@@ -16,6 +16,10 @@
 		FAD134EF2A80206200767FA6 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134EB2A80206200767FA6 /* Photos.swift */; };
 		FAD134F02A80206200767FA6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134EC2A80206200767FA6 /* Photo.swift */; };
 		FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134ED2A80206200767FA6 /* FilkerRequestModel.swift */; };
+		FAD134F62A80240400767FA6 /* Encodable + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F22A80240300767FA6 /* Encodable + Extensions.swift */; };
+		FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F32A80240400767FA6 /* ViewController + Alert.swift */; };
+		FAD134F82A80240400767FA6 /* CollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F42A80240400767FA6 /* CollectionView+Extensions.swift */; };
+		FAD134F92A80240400767FA6 /* TableView + Collectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD134F52A80240400767FA6 /* TableView + Collectionview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		FAD134EB2A80206200767FA6 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		FAD134EC2A80206200767FA6 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		FAD134ED2A80206200767FA6 /* FilkerRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilkerRequestModel.swift; sourceTree = "<group>"; };
+		FAD134F22A80240300767FA6 /* Encodable + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable + Extensions.swift"; sourceTree = "<group>"; };
+		FAD134F32A80240400767FA6 /* ViewController + Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + Alert.swift"; sourceTree = "<group>"; };
+		FAD134F42A80240400767FA6 /* CollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		FAD134F52A80240400767FA6 /* TableView + Collectionview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView + Collectionview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,10 @@
 		FAD134E02A8016C500767FA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FAD134F42A80240400767FA6 /* CollectionView+Extensions.swift */,
+				FAD134F22A80240300767FA6 /* Encodable + Extensions.swift */,
+				FAD134F52A80240400767FA6 /* TableView + Collectionview.swift */,
+				FAD134F32A80240400767FA6 /* ViewController + Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,11 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD134EF2A80206200767FA6 /* Photos.swift in Sources */,
+				FAD134F72A80240400767FA6 /* ViewController + Alert.swift in Sources */,
 				FAD134EE2A80206200767FA6 /* FilkerResponse.swift in Sources */,
 				FAD134F12A80206200767FA6 /* FilkerRequestModel.swift in Sources */,
 				FA5BF8512A8013AA00C06853 /* AppDelegate.swift in Sources */,
 				FA5BF8532A8013AA00C06853 /* SceneDelegate.swift in Sources */,
 				FAD134F02A80206200767FA6 /* Photo.swift in Sources */,
+				FAD134F82A80240400767FA6 /* CollectionView+Extensions.swift in Sources */,
+				FAD134F92A80240400767FA6 /* TableView + Collectionview.swift in Sources */,
+				FAD134F62A80240400767FA6 /* Encodable + Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
